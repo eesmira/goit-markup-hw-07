@@ -1,18 +1,17 @@
 .clients-section {
   padding: 94px 0;
-}
 
-.clients-section .list {
-  display: flex;
-}
+  .list {
+    display: flex;
+  }
+  .logo-item {
+    width: 170px;
+    height: 90px;
 
-.clients-section .logo-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.logo-item {
-  width: 170px;
-  height: 90px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .logo-link {
@@ -27,10 +26,10 @@
   fill: currentColor;
   transition: color var(--transition-duration) var(--transition-timing-function),
     border var(--transition-duration) var(--transition-timing-function);
-}
 
-.logo-link:hover,
-.logo-link:focus {
-  border: 1px solid var(--accent-color);
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+  }
 }

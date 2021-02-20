@@ -39,22 +39,22 @@ img {
 
 .link.current {
   position: relative;
-}
 
-.link.current::after {
-  content: '';
-  display: block;
-  position: absolute;
-  bottom: 0;
-  height: 4px;
-  width: 100%;
-  background-color: var(--accent-color);
-  border-radius: 2px;
-  transition: transform 500ms linear;
-}
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    transition: transform 500ms linear;
+  }
 
-.link.current:hover::after {
-  transform: rotateY(180deg);
+  &:hover::after {
+    transform: rotateY(180deg);
+  }
 }
 
 .logo {
@@ -72,16 +72,5 @@ img {
 }
 
 .accent {
-  color: var(--accent-color);
-}
-
-.site-nav .link.current,
-.site-nav .link:hover,
-.site-nav .link:focus,
-.site-nav .link:active,
-.contacts .link:hover,
-.contacts .link:focus,
-.footer .contacts:hover,
-.footer .contacts:focus {
   color: var(--accent-color);
 }

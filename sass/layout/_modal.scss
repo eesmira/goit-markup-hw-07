@@ -67,12 +67,11 @@
   line-height: 1.143;
   letter-spacing: 0.01em;
   color: var(--primary-txt-color);
-}
 
-.form-input:focus,
-.input-msg:focus {
-  border-color: var(--accent-color);
-  outline: none;
+  &:focus {
+    border-color: var(--accent-color);
+    outline: none;
+  }
 }
 
 .form-input:focus + .input-icon,
@@ -134,6 +133,11 @@
   line-height: 1.143;
   letter-spacing: 0.01em;
   color: var(--primary-txt-color);
+
+  &:focus {
+    border-color: var(--accent-color);
+    outline: none;
+  }
 }
 
 .input-msg::placeholder {
