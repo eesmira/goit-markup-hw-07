@@ -354,6 +354,10 @@ img {
   padding: 94px 0;
 }
 
+.team-section .title {
+  margin-bottom: 10px;
+}
+
 .team.list {
   display: flex;
   margin: -15px;
@@ -370,32 +374,10 @@ img {
   justify-content: space-around;
 }
 
-.team-section .title {
-  margin-bottom: 10px;
-}
-
 .team-item-content {
   padding: 30px;
   background-color: var(--primary-bg-color);
   border-radius: 0px 0px 4px 4px;
-}
-
-.team .title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--primary-txt-color);
-  text-align: center;
-}
-
-.team .description {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--secondary-txt-color);
-  text-align: center;
 }
 
 .team-item-content .social-list-item {
@@ -417,10 +399,27 @@ img {
   transition: color var(--transition-duration) var(--transition-timing-function), background-color var(--transition-duration) var(--transition-timing-function);
 }
 
-.team-item-content .social-link:hover,
-.team-item-content .social-link:focus {
+.team-item-content .social-link:hover, .team-item-content .social-link:focus {
   background-color: var(--accent-color);
   color: var(--additional-txt-color);
+}
+
+.team .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--primary-txt-color);
+  text-align: center;
+}
+
+.team .description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--secondary-txt-color);
+  text-align: center;
 }
 
 .clients-section {
@@ -681,6 +680,12 @@ img {
   transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
+.modal-close-btn:hover .modal-btn-icon,
+.modal-close-btn:focus .modal-btn-icon {
+  color: var(--accent-color);
+  fill: currentColor;
+}
+
 .contact-form {
   padding: 40px;
 }
@@ -707,9 +712,7 @@ img {
   outline: none;
 }
 
-.form-input:focus + .input-icon,
-.modal-close-btn:hover .modal-btn-icon,
-.modal-close-btn:focus .modal-btn-icon {
+.form-input:focus + .input-icon {
   color: var(--accent-color);
   fill: currentColor;
 }

@@ -45,6 +45,12 @@
   color: var(--primary-logo-color);
   fill: currentColor;
   transition: color var(--transition-duration) var(--transition-timing-function);
+
+  .modal-close-btn:hover &,
+  .modal-close-btn:focus & {
+    color: var(--accent-color);
+    fill: currentColor;
+  }
 }
 
 .contact-form {
@@ -74,9 +80,7 @@
   }
 }
 
-.form-input:focus + .input-icon,
-.modal-close-btn:hover .modal-btn-icon,
-.modal-close-btn:focus .modal-btn-icon {
+.form-input:focus + .input-icon {
   color: var(--accent-color);
   fill: currentColor;
 }
@@ -138,14 +142,14 @@
     border-color: var(--accent-color);
     outline: none;
   }
-}
 
-.input-msg::placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.143;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.143;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .check-label {
@@ -158,16 +162,16 @@
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--secondary-txt-color);
-}
 
-.check-label::before {
-  content: '';
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  margin-right: 7px;
-  background-image: url(../images/checkbox.svg);
-  background-color: transparent;
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    background-image: url(../images/checkbox.svg);
+    background-color: transparent;
+  }
 }
 
 .check-input:checked + .check-label::before {
@@ -185,16 +189,16 @@
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--secondary-txt-color);
-}
 
-.consent::before {
-  content: '';
-  display: inline-block;
-  background-image: url(../images/checkbox.svg);
-  background-repeat: no-repeat;
-  width: 16px;
-  height: 15px;
-  margin-right: 8.4px;
+  &::before {
+    content: '';
+    display: inline-block;
+    background-image: url(../images/checkbox.svg);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 15px;
+    margin-right: 8.4px;
+  }
 }
 
 .policy-link {
