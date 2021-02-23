@@ -431,14 +431,15 @@ img {
   width: 100%;
   height: auto;
   padding: 63px 24px;
-  background-color: rgba(33, 150, 243, 0.9);
+  background-color: transparent;
   transform: translateY(100%);
-  transition: transform var(--transition-duration) var(--transition-timing-function);
+  transition: transform var(--transition-duration) var(--transition-timing-function), background-color var(--transition-duration) var(--transition-timing-function);
 }
 
 .projects .link:hover .overlay,
 .projects .link:focus .overlay {
   transform: translateY(0%);
+  background-color: rgba(33, 150, 243, 0.9);
 }
 
 .overlay-text {
